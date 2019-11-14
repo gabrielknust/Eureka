@@ -8,14 +8,24 @@
         private $email;
         private $matricula;
         private $dataNasc;
-        public function __construct($idfuncionario,$cpf,$senha,$nome,$email,$matricula,$dataNasc)
+        private $idcargo;
+        private $ativo;
+        
+        public function getAtivo()
         {
-            $this->idfuncionario=$idfuncionario;
-            $this->senha=$senha;
-            $this->nome=$nome;
-            $this->email=$email;
-            $this->matricula=$matricula;
-            $this->dataNasc=$dataNasc
+            return $this->ativo;
+        }
+        public function setAtivo($ativo)
+        {
+            $this->ativo=$ativo;
+        }
+        public function getIdCargo()
+        {
+            return $this->Idcargo;
+        }
+        public function setIdCargo($idcargo)
+        {
+            $this->idcargo=$idcargo;
         }
         public function getIdFuncionario()
         {

@@ -3,99 +3,47 @@ require_once'../classes/Funcionario.php';
 require_once'Conexao.php';
 require_once'../Functions/funcoes.php';
 
-class InternoDAO
+class FuncionarioDAO
 {
-	public function incluir($interno)
+	public function incluir($funcionario)
     {        
         try {
-            $sql = 'call cadinterno(:nome,:cpf,:senha,:sexo,:telefone,:data_nascimento,:imagem,:cep,:estado,:cidade,:bairro,:logradouro,:numero_endereco,:complemento,:ibge,:registro_geral,:orgao_emissor,:data_expedicao,:nome_pai,:nome_mae,:tipo_sanguineo,:nome_contato_urgente,:telefone_contato_urgente_1,:telefone_contato_urgente_2,:telefone_contato_urgente_3,:certidao,:curatela,:inss,:loas,:bpc,:funrural,:saf,:sus)';
+            $sql = 'insert into funcionario (nome,email,senha,nascimento,cpf,matricula,ativo,id_cargo) values (:nome,:email,:senha,:nascimento,:cpf,:matricula,:ativo,:id_cargo);';
             $sql = str_replace("'", "\'", $sql);            
             $pdo = Conexao::connect();
             $stmt = $pdo->prepare($sql);
-            $senha=$interno->getSenha();
-            $nome=$interno->getNome();
-            $cpf=$interno->getCpf();
-            $sexo=$interno->getSexo();
-            $telefone=$interno->getTelefone();
-            $nascimento=$interno->getDataNascimento();
-            $imagem=$interno->getImagem();
-            $cep=$interno->getCep();
-            $cidade=$interno->getCidade();
-            $bairro=$interno->getBairro();
-            $logradouro=$interno->getLogradouro();
-            $numeroEndereco=$interno->getNumeroEndereco();
-            $complemento=$interno->getComplemento();
-            $rg=$interno->getRegistroGeral();
-            $orgaoEmissor=$interno->getOrgaoEmissor();
-            $nomePai=$interno->getNomePai();        
-            $nomeMae=$interno->getNomeMae();
-            $sangue=$interno->getTipoSanguineo();
-            $nomeContatoUrgente=$interno->getNomeContatoUrgente();
-            $telefone1=$interno->getTelefoneContatoUrgente1();
-            $telefone2=$interno->getTelefoneContatoUrgente2();
-            $telefone3=$interno->getTelefoneContatoUrgente3();
-            $ibge=$interno->getIbge();
-            $dataExpedicao=$interno->getDataExpedicao();
-            $certidao=$interno->getCertidaoNascimento();
-            $curatela=$interno->getCuratela();
-            $inss=$interno->getInss();
-            $loas=$interno->getLoas();
-            $bpc=$interno->getBpc();
-            $funrural=$interno->getFunrural();
-            $saf=$interno->getSaf();
-            $sus=$interno->getSus();
+            $senha=$funcionario->getSenha();
+            $nome=$funcionario->getNome();
+            $cpf=$funcionario->getCpf();
+            $nascimento=$funcionario->getDataNasc();
+            $email=$funcionario->getEmail();
+            $matricula=$funcionario->getMatricula();
+            $idcargo=$funcionario->getIdCargo();
+            $ativo=$funcionario->getAtivo();
             $stmt->bindParam(':senha',$senha);
             $stmt->bindParam(':nome',$nome);
             $stmt->bindParam(':cpf',$cpf);
-            $stmt->bindParam(':sexo',$sexo);
-            $stmt->bindParam(':telefone',$telefone);
-            $stmt->bindParam(':data_nascimento',$nascimento);
-            $stmt->bindParam(':imagem',$imagem);        
-            $stmt->bindParam(':cep',$cep);
-            $stmt->bindParam(':estado',$estado);
-            $stmt->bindParam(':cidade',$cidade);
-            $stmt->bindParam(':bairro',$bairro);
-            $stmt->bindParam(':logradouro',$logradouro);
-            $stmt->bindParam(':numero_endereco',$numeroEndereco);
-            $stmt->bindParam(':complemento',$complemento);
-            $stmt->bindParam(':registro_geral',$rg);
-            $stmt->bindParam(':orgao_emissor',$orgaoEmissor);
-            $stmt->bindParam(':data_expedicao',$dataExpedicao);
-            $stmt->bindParam(':nome_pai',$nomePai);        
-            $stmt->bindParam(':nome_mae',$nomeMae);
-            $stmt->bindParam(':tipo_sanguineo',$sangue);
-            $stmt->bindParam(':nome_contato_urgente',$nomeContatoUrgente);
-            $stmt->bindParam(':telefone_contato_urgente_1',$telefone1);
-            $stmt->bindParam(':telefone_contato_urgente_2',$telefone2);
-            $stmt->bindParam(':telefone_contato_urgente_3',$telefone3);
-            $stmt->bindParam(':ibge',$ibge);
-            $stmt->bindParam(':certidao',$certidao);
-            $stmt->bindParam(':curatela',$curatela);
-            $stmt->bindParam(':inss',$inss);
-            $stmt->bindParam(':loas',$loas);
-            $stmt->bindParam(':bpc',$bpc);
-            $stmt->bindParam(':funrural',$funrural);
-            $stmt->bindParam(':saf',$saf);
-            $stmt->bindParam(':sus',$sus);
+            $stmt->bindParam(':nascimento',$nascimento);
+            $stmt->bindParam(':email',$email);
+            $stmt->bindParam(':matricula',$matricula);
+            $stmt->bindParam(':id_cargo',$idcargo);
+            $stmt->bindParam(':ativo',$ativo);
 
             $stmt->execute();
         }catch (PDOExeption $e) {
-            echo 'Error: <b>  na tabela interno = ' . $sql . '</b> <br /><br />' . $e->getMessage();
+            echo 'Error: <b>  na tabela funcionario = ' . $sql . '</b> <br /><br />' . $e->getMessage();
         }
     }
 
     // excluir
-    public function excluir($idfuncionario)
+    public function excluir($funcionario)
     {
         try {
-            $sql = 'DELETE from cargo WHERE idcargo = :idcargo';
+            $sql = 'DELETE from funcionario WHERE id_funcionario = :idfuncionario';
             $sql = str_replace("'", "\'", $sql);
-            $acesso = new Acesso();
-            
-            $pdo = $acesso->conexao();
-            $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            
+            $pdo = Conexao::connect();            
             $stmt = $pdo->prepare($sql);
+            $idfuncionario=$funcionario
             
             $stmt->bindParam(':idcargo', $idcargo);
             
