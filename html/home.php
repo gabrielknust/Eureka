@@ -2,6 +2,7 @@
     $time=7 * 60 * 60;
     session_set_cookie_params($time);
     session_start();
+    $id=$_SESSION['id'];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -86,7 +87,7 @@
                                 
                             <div class= "sharkout"> Sharkout</div>  
                                 
-                            <div class= "hora"><center><p><?php echo $_SESSION['hora1']; ?></p></center></div> 
+                            <div class= "hora"><center><p><?php echo $_SESSION['hora'.$id]; ?></p></center></div> 
                                 
                             <div class= "hora2"><center><p>00:00:00</p></center></div> 
                             
