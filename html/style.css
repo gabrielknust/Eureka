@@ -1,0 +1,155 @@
+body {
+    width: 1024px;
+    height: 860px;
+    background-color: #25aeeb;
+    
+}
+
+.focus {
+    width: 443px;
+    height: 214px;
+    object-fit: contain;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    margin: auto;
+  }
+
+  .barbatana {
+    width: 102px;
+    height: 102px;
+    object-fit: contain;
+    display: inline-block;
+    margin-left: 250%;
+    margin-top: -20%;
+  }
+
+  .boia {
+    width: 64px;
+    height: 64px;
+    object-fit: contain;
+    margin-left: 260%;
+    margin-top: -5%;
+  }
+
+  .Retangulo-3 {
+    width: 391px;
+    height: 53px;
+    border: solid 5px #707070;
+    margin-left: 65%;
+    margin-top: -5%;
+  }
+
+  .Senha-Shark {
+    width: 384px;
+    height: 32px;
+    -webkit-backdrop-filter: blur(30px);
+    backdrop-filter: blur(30px);
+    font-family: MiriamCLM;
+    font-size: 24px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 3%;
+  }
+
+  .Caminho-2 {
+    width: 21px;
+    height: 20px;
+    -webkit-backdrop-filter: blur(30px);
+    backdrop-filter: blur(30px);
+    box-shadow: 0 3px 6px 0 rgba(30, 28, 28, 0.16);
+    border: solid 4px #707070;
+    background-color: #25aeeb;
+    margin-left: 470%;
+    margin-top: 0%;
+  }
+  
+  .Cobrir-Plantao {
+    width: 136px;
+    height: 27px;
+    text-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    font-family: MiriamCLM;
+    font-size: 20px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.35;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+    margin-left: 102%;
+  }
+
+  .Caminho-3 {
+    width: 254px;
+    height: 51px;
+    border: solid 3px #f3f3f3;
+    background-color: #40b9ef;
+    margin-left: 170%;
+  }
+ 
+  .Sharkin {
+    width: 106px;
+    height: 32px;
+    -webkit-backdrop-filter: blur(24px);
+    backdrop-filter: blur(24px);
+    font-family: MiriamCLM;
+    font-size: 24px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    text-align: center;
+    color: #113c52;
+    margin: auto;
+    margin-top: 3%;
+    margin-left: 27%;
+  }
+
+  .Focus-nos-projetos {
+    width: 180px;
+    height: 27px;
+    -webkit-backdrop-filter: blur(26px);
+    backdrop-filter: blur(26px);
+    text-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    font-family: MiriamCLM;
+    font-size: 20px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.35;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+    margin-left: 190%;
+  }
+
+  .PG2-Retangulo-4 {
+    width: 135px;
+    height: 860px;
+    background-color: rgba(7, 0, 0, 0.8);
+  }
+
+  .focusfc {
+    width: 105px;
+    height: 108px;
+    object-fit: contain;
+  }
+
+  .icons8-pessoa-do-sexo-masculino-64 {
+    width: 64px;
+    height: 64px;
+    object-fit: contain;
+  }
+
+  .icons8-atendimento-80 {
+    width: 64px;
+    height: 64px;
+    object-fit: contain;
+    border-radius: 24px;
+  }
