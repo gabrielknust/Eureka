@@ -1,0 +1,151 @@
+body {
+    width: 1024px;
+    height: 860px;
+    background-color: #25aeeb;
+    
+}
+
+    .focus {
+    width: 443px;
+    height: 214px;
+    object-fit: contain;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    margin-left: 280px;
+    }
+
+    
+    
+    .barbatana {
+    width: 102px;
+    height: 102px;
+    object-fit: contain;
+    display: inline-block;
+    margin-left: -150px;
+    margin-top: 50px;
+
+    }
+
+    .boia {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin-left:-150px;
+    }
+
+    .container {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: -155px;
+    margin-left: 340px;
+    }
+      
+    .form-contact {
+    width: 50%;
+    font-family: "Arial", Times, serif;  
+    }
+    
+    
+    .form-contact-input {
+    width: 75%;
+    color: #ffffff;
+    font-size: 18px;
+    font-family:'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color:transparent;
+    border: 3px solid #707070 ;
+    height: 40px;
+    margin-top:30px;;
+    margin-left: 0px;
+    margin-bottom:5px ;
+    text-indent: 3px;
+
+    }
+
+  .form-contact-inputt {
+    width: 75%;
+    color: #292929;
+    font-size: 18px;
+    font-family:'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color:transparent;
+    border: 3px solid #707070 ;
+    height: 15px;
+    margin-top:28px;;
+    margin-left: -80px;
+    margin-bottom:5px ;
+    text-align: left ;
+    
+
+    }
+    .form-contact-inputtt {
+        width: 75%;
+        color: #ffffff;
+        font-size: 18px;
+        font-family:'Open Sans', 'Helvetica Neue', sans-serif;
+        background-color:transparent;
+        font-weight: bold;
+        height: 15px;
+        margin-left: 123px;
+        margin-top: -28px;
+        text-align: left ;
+        
+    }
+
+    .form-contact-button {
+        width: 40%;
+        font-size: 18px;
+        background-color: #40b9ef;
+        font-weight: bold ;
+        color: black;
+        height: 40px;
+        opacity: .8;
+        margin-left: 80px;
+        margin-bottom: 20px;
+        margin-top: 30px;
+        display: block;
+        border: 3px solid white ;
+      }
+      .form-contact-inputttt {
+        width: 75%;
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: bold;
+        font-family:'Open Sans', 'Helvetica Neue', sans-serif;
+        background-color:transparent;
+        
+        height: 40px;
+        margin-top:30px;;
+        margin-left: 105px;
+        margin-bottom:5px ;
+       
+    
+        }
+    
+ 
+        
+
+    
+    
+    ::-webkit-input-placeholder {
+    color: whitesmoke;
+    font-weight: bold  ;
+    text-align: center ;   
+    }
+
+    
+    
+
+
+
+
+
+    
+
+    
+
+
+
+    
+
+
+
+ 

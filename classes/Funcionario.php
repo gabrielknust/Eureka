@@ -1,5 +1,5 @@
 <?php
-    private class Funcionario
+    class Funcionario
     {
         private $idfuncionario;
         private $cpf;
@@ -10,6 +10,7 @@
         private $dataNasc;
         private $idcargo;
         private $ativo;
+
         
         public function getAtivo()
         {
@@ -21,7 +22,7 @@
         }
         public function getIdCargo()
         {
-            return $this->Idcargo;
+            return $this->idcargo;
         }
         public function setIdCargo($idcargo)
         {
@@ -69,11 +70,11 @@
         }
         public function getMatricula()
         {
-            return $this->cpf;
+            return $this->matricula;
         }
-        public function setMatricula($cpf)
+        public function setMatricula($matricula)
         {
-            $this->cpf = $cpf;
+            $this->matricula = $matricula;
         }
         public function getDataNasc()
         {

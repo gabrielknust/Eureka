@@ -1,0 +1,222 @@
+body {
+  width: 1024px;
+  height: 860px;
+  background-color: #25aeeb;
+  
+}
+.PG2-RetanguloEsquerda {
+  width: 135px;
+  height: 860px;
+  background-color: rgba(7, 0, 0, 0.8);
+  margin-top: 0%;
+}
+
+.focusfc {
+  width: 105px;
+  height: 108px;
+  object-fit: contain;
+}
+
+.icons8-pessoa-do-sexo-masculino-64 {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+}
+
+.icons8-atendimento-80 {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  border-radius: 24px;
+}
+
+.icons8-calendario-100 {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+}
+
+.Retangulo-7 {
+  width: 60px;
+  height: 60px;
+  box-shadow: 0 3px 6px 0 rgba(255, 255, 255, 0);
+  border: solid 1px rgba(255, 255, 255, 0);
+}
+
+.icons8-calendario-50 {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  opacity: 0.66;
+}
+
+.icons8-rolagem-128 {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  margin-top: 10%;
+  opacity: 0.6;
+}
+
+.icons8-sair-100-2 {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  margin-top: 10%;
+}
+
+.iconCarta {
+    width: 68px;
+    height: 68px;
+    object-fit: contain;
+    opacity: 0.66;
+ }
+
+.EscreverUsuario {
+  width: 134px;
+  height: 32px;
+  font-family: MiriamCLM;
+  font-size: 24px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000000;
+  margin-top: -25%;
+  margin-left: 80%;
+
+}
+
+  .Caminho-6 {
+    width: 620px;
+    height: 649.8px;
+    border: solid 1px #707070;
+    background-color: rgba(7, 0, 0, 0.65);
+    margin-left: 10%;
+  }
+
+  .Retangulo_Campo {
+    width: 196px;
+    height: 51px;
+    border: solid 3px #042c3f;
+    background-color: #40b9ef;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2;
+    letter-spacing: normal;
+    text-align: center;
+    color: white;
+    margin-left: 50%;
+  }
+
+  .EscreverNome {
+    width: 134px;
+    height: 32px;
+    font-family: MiriamCLM;
+    font-size: 24px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    text-align: center;
+    color: white;
+    margin-left: 13%;
+    margin-top: 0%;
+    white-space: nowrap;
+  
+  }
+
+  .foto{
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    margin-top: 0%;
+    margin-left: 45%;
+  }
+
+  .Subir{
+      margin-top: -40%;
+  }
+
+  .CaixaPlantão{
+    width: 400px;
+    height: 200px;
+    border: solid 2px #25aeeb;
+    background-color: #113c52;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: -10px;
+    letter-spacing: normal;
+    text-align: center;
+    color:whitesmoke;
+    margin-left: 25%;
+    margin-top: 0%;
+    
+  }
+
+  .EscreverPlantao {
+    width: 134px;
+    height: 32px;
+    font-family: MiriamCLM;
+    font-size: 24px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    text-align: center;
+    color: #000000;
+    margin-left: 58%;
+    margin-top: 10%%;
+  }
+
+  .iconLixeira {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    margin-top: ;
+ }
+
+ td{
+     border: 1px solid #25aeeb;
+     padding: 1em 1em;
+    
+ }
+
+
+ .Escrever {
+    width: 134px;
+    height: auto;
+    font-family: MiriamCLM;
+    font-size: auto;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    text-align: center;
+    color: white;
+    white-space: normal;
+    
+  }
+
+  .EscreverTitulosTabela{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2;
+    letter-spacing: normal;
+    text-align: center;
+    color: white;
+  }

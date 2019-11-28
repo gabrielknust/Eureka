@@ -1,5 +1,5 @@
 <?php
-	private class Cargo
+	class Cargo
 	{
 		private $idCargo;
 	    private $nome;

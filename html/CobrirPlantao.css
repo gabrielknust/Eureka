@@ -1,0 +1,62 @@
+body {
+  width: 1024px;
+  height: 860px;
+  background-color: #25aeeb;
+  
+}
+
+  .focus {
+  width: 443px;
+  height: 214px;
+  object-fit: contain;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  margin-left: 0px;
+  }
+
+  .boiaPlantao {
+    width: 600px;
+    height: 400px;
+    object-fit: contain;
+    margin-left: 0px;
+    }
+
+  .Escrever{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2;
+    letter-spacing: normal;
+    text-align: center;
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.2em;
+  }
+
+  .form-contact-input {
+    width: 200px;
+    color: whitesmoke;
+    font-size: 18px;
+    background-color: transparent;
+    border: 3px rgb(228, 212, 212);
+    border-style: dashed;
+    height: 40px;
+   
+    text-indent: 25%;
+  }
+
+  .Posicionar{
+      margin-top: -50%;
+  }
+
+  .Caminho-3 {
+    width: 186.4px;
+    height: 51px;
+    border: solid 3px #f3f3f3;
+    background-color: #40b9ef;
+    margin-top: 30%;
+    font-weight: 900;
+    font-size: 100%;
+  }
+
